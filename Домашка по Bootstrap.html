@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+ <html lang="ru">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Руслан Белецкий">
+	<meta name="keywords" content="новости днепра">
+	<meta name="description" content="последние новости города Днепр">
+	<title>новостной Сайт Днепра</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pattaya&display=swap">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico&display=swap">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<style>
+		#mia {background-color: #CCC8CD}
+		img.tvi {margin-bottom: 10px; width: 100%; height: auto; margin-left: 1px; margin-top: 10px; margin-right: 10px; border-top: 5px solid #158078; border-left: 5px solid #158078; border-bottom: 5px solid #158078; border-right: 5px solid #158078;}
+		.row {margin-top: 0.5%; margin-left: 10px; margin-right: 10px; margin-bottom: 5px; padding-top: 30px; border-top: 2px solid #a75; border-left: 2px solid #a75;border-bottom: 2px solid #a75; border-right: 2px solid #a75;}
+
+		.col-12.col-lg-6 {padding-top: 10px;padding-bottom: 10px}
+		a.http:hover {background: #99ff99}
+		.mt-0 {padding: 2%; font-family: 'Pattaya', sans-serif; font-size: 17px;}
+		.col {margin-right: 10px; margin-left: 10px; margin-bottom: 10px; margin-top: 10px; padding-top: 10px}
+		
+		img.rounded-pill {margin-bottom: 10px; width: 40%; height: auto; border-top: 5px solid #158078; border-left: 5px solid #158078; border-bottom: 5px solid #158078;border-right: 5px solid #158078; }
+		.embed-responsive.embed-responsive-1by1 { border-top: 5px solid #158078; border-left: 5px solid #158078; border-bottom: 5px solid #158078; border-right: 5px solid #158078;}
+		img.asd {height: 30px; width: auto}
+		
+
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 0px; margin-left: 25.54px;margin-right: 25.52px; border-top: 2px solid #6A5ACD; border-left: 2px solid #6A5ACD; border-bottom: 2px solid #6A5ACD; border-right: 2px solid #6A5ACD}
+		/*div#navbarSupportedContent.collapse.navbar-collapse {background: #71BC78}*/
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top {background: #71BC78!important}
+
+		.container-fluid {padding-top: 80px}
+		a.nav-link {font-family: 'Pattaya', sans-serif; text-transform: uppercase;	font-weight: 700;}
+		a.nav-link:hover {color: #243DE5!important}
+		button.navbar-toggler {background: #6A5ACD}
+		span.navbar-toggler-icon {background: #EEEFF1}
+		.table-responsive {margin-top: 0.5%; margin-left: 10px; margin-bottom: 5px; padding-top: 30px; border-top: 2px solid #DCDCDC; border-left: 2px solid #DCDCDC;border-bottom: 2px solid #DCDCDC;border-right: 2px solid #DCDCDC;}
+		.mtm { font-family: 'Pattaya', sans-serif; color: #D53E07; padding-left: 110px}
+
+	 </style>
+ </head>
+<body id="mia">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#mia">Меню</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Headline">Последние новости</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#events">Недавние прошлое</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Event_List">Предстоящие события</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Add_information">Обратная связь</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div id="Headline">
+			<div class="row">
+				<div class="col">
+					<h5 class="mt-0">В Днепре загорелось общежитие медицинского колледжа</h5>
+					<img class="rounded-pill" src="https://dp.informator.ua/wp-content/uploads/2020/01/pozhar-obshhezhitie-meduchilishha-00-1.jpg" alt="...">
+					<p>В понедельник, 20 января, около 7:00 в общежитии медицинского колледжа на проспекте Богдана Хмельницкого, 23а, почувствовали резкий запах дыма и обратились в службу спасения. Через считанные минуты сотрудники ГСЧС уже были на месте происшествия.По предварительной информации, очаг возгорания зафиксировали в одной из комнат на 9 этаже общежития. Об этом сообщает Информатор с места события.Из здания срочно эвакуировали жильцов. На месте происшествия работали спасатели, полицейские, медики и аварийная газовая служба. Сотрудники ГСЧС оперативно приступили к ликвидации пожара. Что послужило причиной возгорания, установят правоохранители.<br>Напомним, ранее мы сообщали о пожаре в детской больнице на Космической.</p>   
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="embed-responsive embed-responsive-1by1">
+						<iframe src="https://www.youtube.com/embed/xVW0sxRAHEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="events">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<img class="tvi" src="https://dp.informator.ua/wp-content/uploads/2019/12/photo_2019-12-19_10-42-42.jpg" alt="...">
+
+				</div>
+				<div class="col">
+					<h5 class="mt-0">Пожар в детской больнице на Космической в Днепре.</h5>
+					<p >19 декабря, около 10:30, сотрудники детской областной больницы на Космической почувствовали запах дыма и вызвали спасателей. Сотрудники ГСЧС оперативно прибыли к месту происшествия.К счастью, в инциденте никто не пострадал. Об этом сообщает Информатор со слов пресс-секретаря ГСЧС области Дарьи Гречищевой.Прибыв к больнице, спасатели установили, что задымление произошло на цокольном этаже. Там случилось короткое замыкание в холодильнике. Происшествие на площади 1 м² ликвидировали в 10:50. Детали выясняются.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<img class="tvi" src="https://dp.informator.ua/wp-content/uploads/2019/12/Pozhar-SHmidta-00.jpg" alt="...">
+				</div>
+				<div class="col">
+					<h5 class="mt-0">В Днепре на Шмидта сгорела квартира в многоэтажке.</h5>
+					<p>Утром, 18 декабря, в многоэтажном доме на улице Шмидта, 25 А загорелась квартира, расположенная на 9-м этаже. Во время пожара пострадал мужчина.Сообщение о пожаре поступило на спецлинию «101» приблизительно в 6:20. На борьбу с огнем направили несколько бригад ГСЧС. На место также приехали несколько патрульных экипажей и бригада скорой помощи. Об этом сообщает Информатор с места происшествия.Как только начался пожар, жители дома сразу вышли из здания: многие успели прихватить с собой документы и домашних любимцев. Спасателям удалось оперативно локализовать очаг возгорания и избежать жертв.Во время пожара пострадал мужчина, проживавший в квартире на 9-м этаже. У него на торсе остались ожоги, которые сразу обработали медики. Пламя уничтожило практически все, что находилось в квартире. Вероятно, пожар мог возникнуть из-за неисправности проводки. Сейчас на месте работают правоохранители, которые выясняют все детали случившегося.</p>
+				</div>
+			</div>
+		</div>
+		<div id="Event_List">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="table-responsive">
+						<table class="table">
+							<tr><h5 class="mtm">Предстоящие события</h5></tr>
+
+							<tr><td><a class="http" href="https://www.5632.com.ua/news/2637098/v-odnom-iz-nocnyh-klubov-pavlograda-rabotal-specnaz" target="blank">В одном из ночных клубов Павлограда будет работать спецназ</a></td></tr>
+							<tr><td><a class="http" href="https://one.kr.ua/news/26788" target="blank">Писатель из Кривого Рога Григорий Гусейнов представит новую книгу в столице</a></td></tr>
+							<tr><td><a class="http" href="http://lcity.dp.ua/?p=42003" target="blank">Театр Каменского готовит концерт для влюбленных</a></td></tr>
+							<tr><td><a class="http" href="https://dp.informator.ua/2020/01/21/v-dnepre-poyavilos-novoe-graffiti-s-pyushhej-babulej/" target="_blank">В Днепре появится новое граффити с пьющей бабулей</a></td></tr>
+							<tr><td><a class="http" href="https://nikopol.nikopolnews.net/nikopol/21-zhkkh/13678-v-nikopole-zloumyshlenniki-obestochili-dva-bolshikh-rajona" target="blank">В Никополе злоумышленники обесточат два больших района</a></td></tr>
+						</table>
+					</div>	
+
+
+				</div>
+
+				<div class="col">
+
+					<!-- Modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">Натисни тобі сподобається</button>
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Гимн Украины</h5>
+								</div>
+								<div class="modal-body">
+									<iframe width="460" height="344" src="https://www.youtube.com/embed/EdH1d1UMKPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	<footer>
+		<div id="Add_information">
+	   <div class="row">
+	   	 <div class="col">
+		  
+		   	<form>
+               <div class="form-group">
+                 <label for="exampleInputEmail1">Email address</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               </div>
+               <div class="form-group">
+                 <label for="exampleInputPassword1">Password</label>
+                 <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </div>
+       
+             	<div class="row">
+		 			<div class="col-2"><a href="http://viber.com"><img style="height: 30px; width: auto" src="https://cdn6.aptoide.com/imgs/4/2/0/420c996149582ebe88f1c1c91b18b750_icon.png" alt="..."></a></div>
+		 			<div class="col-2"><a href="http://facebook.com"><img style="height: 30px; width: auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbY7TmOb2Ewp_IrKI7lmjzAggKxNRMxYggLlfh90K9o32Ukrp-&s" alt="..."></a></div>
+		 			
+		 			<div class="col-2"><a href="http://whatsapp.com"><img style="height: 30px; width: auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRENJOAxfyAqj8jocv_PxKPJavBBO3ATfhbtTavuVABA34fmxYw&s" alt="..."></a></div>
+		 			
+		 			<div class="col-6" style="height: 50px; width: auto; text-align: right; font-family: 'Pattaya', sans-serif; font-size: 14px;">Ryslan Beletskiy 2020 ©</div>
+		 		</div>
+		 		</div>
+           </footer>
+		
+	     </div>   
+  </body>
+</html>
